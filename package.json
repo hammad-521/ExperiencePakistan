@@ -5,10 +5,15 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build:static": "node scripts/build-static.js"
   },
   "author": "Muhammad Wasif",
   "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10"
+  },
   "dependencies": {
     "@sendgrid/mail": "^8.1.0",
     "bcryptjs": "^2.4.3",
