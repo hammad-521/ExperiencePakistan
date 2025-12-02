@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs | Experience Pakistan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/css/headerFooter.css" />
+    <link rel="stylesheet" href="/css/aboutUS.css" />
+    <link rel="stylesheet" href="/css/homeheader.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9d779ebc01.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- ----------------- Header ---------------------- -->
+    <!-- ----------------- Header ---------------------- -->
+<header>
+  <div class="container flex gap">
+    <div class="bar menu-toggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="flex flex-center">
+      <a href="/home">
+        <img
+          class="header-logo tablet-logo"
+          src="/images/newlogo.png"
+          alt=""
+          hidden
+        />
+      </a>
+    </div>
+
+    <nav class="primary-nav flex gap menu" style="left: -1500px">
+      <a href="/home">
+        <img
+          class="header-logo laptop-logo"
+          src="/images/newlogo.png"
+          alt="Experience Pakistan Logo"
+      /></a>
+
+      <ul class="flex gap menu-nav">
+        <li>
+          <a href="/home" class=""
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/artists"
+            class=""
+            >Artist</a
+          >
+        </li>
+        <li>
+          <a
+            href="/partners"
+            class=""
+            >Partners</a
+          >
+        </li>
+
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropbtn "
+            >Things to Do</a
+          >
+          <div class="dropdown-content">
+            <ul>
+              <li>
+                <a
+                  href="/things-to-do/food&drinks"
+                  class=""
+                  >Food & Drink</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/things-to-do/experiences"
+                  class=""
+                  >Experiences</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropbtn "
+            >Events</a
+          >
+          <div class="dropdown-content">
+            <ul>
+              <li>
+                <a
+                  href="/city?city=Karachi"
+                  class=""
+                  >Karachi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/city?city=Lahore"
+                  class=""
+                  >Lahore</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/city?city=Islamabad"
+                  class=""
+                  >Islamabad</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <span class="actionButtons hidden gap">
+          <a class="actionButtons-1" href="/organizer/signup">
+            Organize An Event</a
+          >
+
+          
+          <li class="actionButtons-3 dropdown">
+            <a href="#" class="dropbtn">
+              <i class="fa-sharp fa-solid fa-user"></i
+            ></a>
+            <div class="dropdown-content right bottom">
+              <ul>
+                <li><a href="/user/login">Customer Login</a></li>
+                <li>
+                  <a href="/organizer/login">Organizer Login</a>
+                </li>
+                <li><a href="/admin/admin-login">Admin Login</a></li>
+              </ul>
+            </div>
+          </li>
+          
+        </span>
+      </ul>
+    </nav>
+
+    <div
+      class="actionButtons flex menu-2  "
+    >
+      
+      <a class="actionButtons-1" href="/organizer/signup">
+        Organize An Event
+      </a>
+      
+      <ul>
+        
+
+        <li class="actionButtons-3 dropdown">
+          <a href="#" class="dropbtn">
+            <i class="fa-sharp fa-solid fa-user"></i
+          ></a>
+          <div class="dropdown-content right">
+            <ul>
+              <li><a href="/user/login">Customer Login</a></li>
+              <li>
+                <a href="/organizer/login">Organizer Login</a>
+              </li>
+              <li><a href="/admin/admin-login">Admin Login</a></li>
+            </ul>
+          </div>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <!-- ----------------- Hero Section ---------------------- -->
+
+    <main class="faq container wrapper">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-container wrapper">
+        <div class="faq-item">
+          <h3 class="faq-question flex">
+            How do I find events on Experience Pakistan?
+            <i class="fa-solid fa-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              Finding events is easy! Our user-friendly Navigation bar allows
+              you to easily go to the Events page of Karachi, Lahore or
+              Islamabad. You can also browse through featured events or explore
+              different event categories to discover exciting new experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question flex">
+            How do I buy Ticket for an event?
+            <i class="fa-solid fa-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              The Ticket purchasing process is simple and secure. Once you find
+              an event you're interested in, click the "Book Tickets" button and
+              follow the on-screen instructions. You might need to create an
+              account on Experience Pakistan if you haven't already.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question flex">
+            What happens after I buy Ticket for an event?
+            <i class="fa-solid fa-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              You'll receive a confirmation email with all the event details and
+              any further instructions from the event organizer. You can also
+              access your registration details and manage them through your
+              Experience Pakistan account.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question flex">
+            What types of payment methods are accepted for event Ticket booking?
+            <i class="fa-solid fa-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <p>
+              The payment method accepted for event booking is Credit Card or
+              Debit Card using Stripe.
+            </p>
+          </div>
+        </div>
+
+        <!-- End -->
+      </div>
+    </main>
+
+    <!-- ----------------- Call to Action Section ---------------------- -->
+
+    <section
+  class="CTA"
+  data-aos="fade-up"
+  data-aos-anchor-placement="bottom-bottom"
+  data-aos-duration="1000"
+>
+  <div class="news">
+    <h2>NEWSLETTER SIGN UP</h2>
+    <p>Get latest updates on things to do in Pakistan</p>
+    <form action="/newsletter" method="post">
+      <input
+        type="email"
+        placeholder="Your E-Mail Address"
+        name="email"
+        required
+      />
+      <button>Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- ----------------- Footer Section ---------------------- -->
+
+    <!-- ----------------- Footer Section ---------------------- -->
+<footer>
+  <div class="container">
+    <div class="footer-main flex container gap">
+      <div class="about-us">
+        <ul>
+          <h2>About US</h2>
+          <li>
+            Experience Pakistan is a platform for all type of events and
+            entertainments in major cities of Pakistan.
+          </li>
+          <li>
+            <img class="stripe" src="./images/stripe.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="helpful-links">
+        <ul>
+          <h2>Helpful Links</h2>
+          <li><a href="/home">Experience Pakistan</a></li>
+          <li><a href="/search-by-city">Search By City</a></li>
+          <li><a href="/aboutUs">About Us</a></li>
+          <li><a href="/contactUs">Contact Us</a></li>
+          <li><a href="/blogs">Blogs</a></li>
+          <li><a href="/faqs">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <div class="eventsByCity">
+        <ul>
+          <h2>Events By City</h2>
+          <li><a href="/city?city=Lahore">Lahore</a></li>
+          <li><a href="/city?city=Karachi">Karachi</a></li>
+          <li><a href="/city?city=Islamabad">Islamabad</a></li>
+        </ul>
+      </div>
+
+      <div class="useful-links">
+        <ul>
+          <h2>Useful Links</h2>
+          <li><a href="/complaint">Submit a Complaint</a></li>
+          <li><a href="/suggestion">Give a Suggestion</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-secondary flex gap">
+      <div class="copyright">
+        <p class="flex">
+          Copyright ©️ 2024 Experience Pakistan. All Rights Reserved
+        </p>
+      </div>
+
+      <div class="external-link flex wrapper">
+        <a href="/termcondition">Terms & Conditions</a>
+        <a href="/privacypolicy">Privacy Policy</a>
+        <a href="/cookiepolicy">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ----------------- Scripts ---------------------- -->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+
+<script src="./scripts/menu.js"></script>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu");
+    menu.style.left = menu.style.left === "-1500px" ? "0" : "-1500px";
+
+    const bars = document.querySelectorAll(".bar");
+    bars.forEach((bar) => bar.classList.toggle("change"));
+  }
+</script>
+
+<script>
+  window.onload = function () {
+    AOS.init();
+  };
+</script>
+
+<script>
+  function closeCard() {
+    var successCard = document.getElementById("successCard");
+    successCard.style.display = "none";
+  }
+</script>
+
+
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+      const icon = document.getElementById("changeIcon");
+      faqItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          item.classList.toggle("active");
+          const answer = item.querySelector(".faq-answer");
+          answer.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>
