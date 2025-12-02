@@ -45,7 +45,12 @@ const defaultContext = {
 };
 
 function renderSync(templatePath, context) {
-  const template = fs.readFileSync(templatePath, 'utf8');
+  let template;
+  try {
+    template = fs.readFileSync(templatePath, 'utf8');
+  } catch (readErr) {
+    throw new Error(`Failed to read template file ${templatePath}: ${readErr.message}`);
+  }
   return ejs.render(template, context, { 
     root: viewsDir, 
     filename: templatePath,
@@ -121,7 +126,8 @@ try {
     }
   }
 
-  // Create .nojekyll to allow files/folders starting with _
+  // Create .nojekyll to prevent GitHub Pages from using Jekyll processing,
+  // which would ignore files/folders starting with underscore
   fs.writeFileSync(path.join(outDir, '.nojekyll'), '', 'utf8');
   console.log('Wrote docs/.nojekyll');
 
